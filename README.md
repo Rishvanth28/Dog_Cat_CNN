@@ -39,15 +39,3 @@ cat_dog_classifier/
    streamlit run main.py
    ```
 
-## Model setup
-
-Place `best_model.keras` in the same folder as `main.py`. The application
-loads this file once through Streamlit caching and reuses it after refresh.
-
-The saved model must use sigmoid binary classification:
-
-- Probability below 0.5: Cat
-- Probability 0.5 or above: Dog
-
-Uploaded images are converted to RGB and resized to the input size required
-by the saved model. The model in this project requires 128 × 128 images.
